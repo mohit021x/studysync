@@ -400,5 +400,59 @@
     }
 }
 
+.testimonial{
+    margin-top: 2rem;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    font-family: "Roboto", serif;
+}
+
+.usercardsgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.person{
+    padding: 1.2rem;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    font-family: "Roboto", serif;
+    color: rgba(49, 45, 45, 0.96);
+    border: 0.02px rgba(160, 152, 152, 0.318) solid;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 1px rgba(225, 223, 223, 0.501); 
+    font-size: 14.5px;
+    transition: all 0.1s linear ;
+}
+
+.testimonial h2{
+    font-size: 1.7rem;
+}
+
+#personname{
+    color: rgba(16, 16, 198, 0.893);
+    font-weight: bold;
+}
+
+.person img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.person:hover{
+    transform: scale(1.05);
+}
 
 
