@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
+/* html, body{
+    height: 100%;
+} */
 .container{
     width: 100vw;
-    min-height: 100vh;
+    /* height: 100vh; */
+    height: auto;
     background-color: rgba(254, 250, 250, 0.986);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
     gap: 3rem;
+    overflow: auto;
 }
 
 .header{
@@ -160,14 +165,14 @@
 
 #greypara{
     margin-top: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "Roboto", serif;
     color: rgba(76, 72, 72, 0.882);
 }
 
 .introlinks{
     margin-top: 25px;
-    width: 60%;
+    width: 65%;
     display: flex;
     gap: 2rem;
 }
@@ -182,7 +187,7 @@
     border-radius: 5px;
     color: white;
     padding: 5px;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 #start{
@@ -222,7 +227,7 @@
 }
 
 .social h2{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: "Roboto", serif;
 }
 
@@ -304,3 +309,96 @@
         font-size: 2.1rem;
     }
 }
+
+.cards{
+    margin-top: 25px;
+    /* border: solid 2px black; */
+    max-width: 40rem;
+    width: auto;
+    min-height: 45rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.8rem;
+}
+
+.cards h2{
+    font-size: 1.rem;
+    font-family: "Roboto", serif;
+}
+
+#advantage{
+    width: auto;
+    font-family: "Roboto", serif;
+    color: rgba(76, 72, 72, 0.882);
+}
+
+.cardsgrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(3,350px); */
+    gap: 2rem;
+}
+
+.items{
+    padding: 1.4rem 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.learning{
+    background-color: rgba(35, 35, 190, 0.863);
+}
+
+.affordability{
+    background-color: rgba(239, 22, 137, 0.847);
+}
+
+.partnership{
+    background-color: rgb(216, 216, 51);
+}
+
+.technology{
+    background-color: rgb(79, 165, 79);
+}
+
+.support{
+    background-color: rgb(96, 187, 223);
+}
+
+.insights{
+    background-color: rgb(125, 21, 125);
+}
+.items img{
+    border-radius: 60%;
+    height: 2.5rem;
+    width: 3.2rem;
+}
+
+.items p, .items h3{
+    color: white;
+    font-family: "Roboto", serif;
+
+}
+
+@media (min-width: 670px) {
+    .cards h2{
+        font-size: 1.8rem;
+        font-family: "Roboto", serif;
+    }
+    .cardsgrid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(3,350px); */
+        gap: 2rem;
+    }
+}
+
+
+
