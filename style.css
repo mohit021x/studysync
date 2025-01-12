@@ -414,8 +414,9 @@
 .usercardsgrid{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
+    place-items: center;
 }
 
 .person{
@@ -453,6 +454,16 @@
 
 .person:hover{
     transform: scale(1.05);
+}
+
+@media (min-width: 935px) {
+    .usercardsgrid{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .person{
+        width: 100%;
+    }
 }
 
 
