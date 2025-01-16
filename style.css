@@ -481,8 +481,8 @@
 }
 
 #email {
-    width: 200px;
-    height: 28px;
+    width: 220px;
+    height: 30px;
     border: 1px solid #555151;
     border-radius: 2px;
     padding: 5px;
@@ -505,7 +505,7 @@
     position: relative;
     top: 20px;
     text-align: center;
-    height: 28px;
+    height: 30px;
     width: 3.4rem;
     background-color: rgba(22, 22, 212, 0.815);
     border: none;
